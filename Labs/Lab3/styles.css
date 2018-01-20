@@ -1,0 +1,25 @@
+/*
+   Filename: styles.css
+
+   Author: Xin Huang
+   Date: 09/27/2017
+   External css file for lab 3
+   */
+
+   h1 {
+       background-color: orangered;
+       text-align: center;
+   }
+
+   article {
+       text-align: center;
+   }
+
+   footer {
+       background-color: green;
+       color: white;
+   }
+
+   .contact {
+       text-align: right;
+   }

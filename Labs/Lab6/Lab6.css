@@ -1,0 +1,87 @@
+body {
+    width: 1000px;
+    height: auto;
+}
+
+form {
+    height: 1000px;
+}
+
+fieldset {
+    height: auto;
+    padding: 10px;
+    margin: 0px;
+}
+
+fieldset p {
+    width: 400px;
+    float: left;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0px;
+    height: 25px;
+}
+
+.required p:after,
+.employmentstatus p:after {
+    content: " *";
+    color: red;
+}
+
+.employmentstatus,
+.referral {
+    margin: 10px 0px;
+    height: 25px;
+}
+
+.employmentstatus label,
+.referral label {
+    display: inline-block;
+    margin: 0px;
+}
+
+.question {
+    height: 150px;
+}
+
+.question div{
+    height: 50px;
+    margin: 0px;
+    display: block;
+}
+
+.question p {
+    width: 800px;
+    float: left;
+    margin: 0;
+}
+
+.question label {
+    display: inline-block;
+    margin: 0px;
+}
+
+input.checkradio  {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
+}
+
+input[type=email]:valid,
+input[type=url]:valid {
+    background-color:lightgreen;
+}
+
+input[type=email]:invalid,
+input[type=url]:invalid {
+    background-color:lightpink;
+}
+
+
+
+
+
+

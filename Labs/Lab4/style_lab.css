@@ -1,0 +1,65 @@
+/*
+   Eating Well in Season style sheet
+   Filename: style_lab.css
+
+   Author: Your Name
+   Date: Date
+ */
+
+/* reset styles */
+article, body, div, footer, header, h1, h2, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/* body and page container */
+body {
+	background-color: silver;
+}
+
+.container {
+/*	max-width: 1000px;*/
+}
+
+/* headings */
+header {
+	background-color: olive;
+	color: floralwhite;
+	text-align: left;
+}
+
+
+/* position container */
+.positioncontainer {
+
+}
+
+/* main content */
+article {
+	background-color: floralwhite;
+	float: left;
+	clear: left;
+}
+
+article h2 {
+	background-color: lightskyblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* sidebar */
+aside {
+	color: black;
+	text-align: left;
+	background-color: gold;
+	padding-bottom: 26px;
+}
+
+/* footer section */
+footer {
+	background-color: olive;
+	color: floralwhite;
+	text-align: right;
+	clear: both;
+}

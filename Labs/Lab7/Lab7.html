@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Application Form</title>
+    <!--
+         Lab Exercise 7: Form
+         Filename: Lab6.html
+
+         Author: Xin Huang
+         Date: 11/08/2017
+      -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="Lab7.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Job Application Form</h1>
+</header>
+
+<div class="container">
+    <p>Thank you for your interest in working with us. Please check below for</p>
+    <form class="applicationform">
+        <fieldset class="contactinfo">
+            <label class="required">
+                <p>Name</p>
+                <div class="fullname">
+                    <input type="text" id="fnameinput" name="fname" placeholder="First" required>
+                    <input type="text" id="lnameinput" name="lname" placeholder="Last" required>
+                </div>
+            </label>
+            <label for="email" class="required">
+                <p>Email</p>
+                <input type="email" id="email" name="email" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="position" class="required">
+                <p>What position are you applying for?</p>
+                <select id="position" name="position" required>
+                    <option value="Deputy Sheriff">Deputy Sheriff</option>
+                    <option value="Deputy Sheriff">Jail Administrator</option>
+                    <option value="Deputy Sheriff">Sheriff Investigator</option>
+                    <option value="Deputy Sheriff">Records Clerk</option>
+                </select>
+            </label>
+            <label for="startdate" class="required">
+                <p>Available start date</p>
+                <input type="date" id="startdate" name="startdate" required>
+            </label>
+            <div class="employmentstatus">
+                <p>What is your current employment status?</p>
+                <label for="employed">
+                    <input type="radio" name="employmentstatus" id="employed" value="Unemployed" checked>
+                    Employed
+                </label>
+                <label for="selfemployed">
+                    <input type="radio" name="employmentstatus" id="selfemployed" value="Self-Employed">
+                    Self-Employed
+                </label>
+                <label for="unemployed">
+                    <input type="radio" name="employmentstatus" id="unemployed" value="Unemployed">
+                    Unemployed
+                </label>
+                <label for="student">
+                    <input type="radio" name="employmentstatus" id="student" value="Student">
+                    Student
+                </label>
+            </div>
+            <label for="resume">
+                <p>Provide your resume by providing your resume URL:</p>
+                <input type="url" id="resume" name="resume">
+            </label> 
+        </fieldset>
+        <fieldset class="contactinfo">
+            <div class="referral">
+                <p>Would you like to list references?</p>
+                <label>
+                    <input type="radio" name="referralselect" value="Yes" checked>
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="referralselect" value="No">
+                    No
+                </label>
+            </div>
+            <label>
+                <p>Name</p>
+                <div class="fullname">
+                    <input type="text" name="fname" placeholder="First">
+                    <input type="text" name="lname" placeholder="Last">
+                </div>
+            </label>
+            <label for="email">
+                <p>Email</p>
+                <input type="email" name="email">
+            </label>
+        </fieldset>
+        <fieldset class="question">
+            <div>
+                <p>Have you ever been convinced of any criminal offence (civilian or military) in
+                    the U.S or any other country? If yes, please explain including the date, agency, charges
+                    and disposition</p>
+                <label>
+                    <input type="radio" name="question1select" class="checkradio" value="NO" checked>
+                    NO
+                </label>
+                <label>
+                    <input type="radio" name="question1select" class="checkradio" value="YES">
+                    YES
+                </label>
+            </div>
+            <div>
+                <textarea rows="5" cols="100" class="textarea1" name="question1text"></textarea>
+            </div>
+        </fieldset>
+        <fieldset class="question" id="lastfieldset">
+            <div>
+                <p>Have you withheld any fact that might affect the decision to approve this licence?
+                If yes, please explain</p>
+                <label>
+                    <input type="radio" name="question2select" class="checkradio" value="NO" checked>
+                    NO
+                </label>
+                <label>
+                    <input type="radio" name="question2select" class="checkradio" value="YES">
+                    YES
+                </label>
+            </div>
+            <div>
+                <textarea rows="5" cols="100" class="textarea2" name="question2text"></textarea>
+            </div>
+        </fieldset>
+        <fieldset class="submitbutton">
+            <input type="submit" id="submit" value="APPLY FOR THE JOB">
+        </fieldset>
+    </form>
+</div>
+<script src="script7.js" type="text/javascript"></script>
+
+</body>
+</html>
