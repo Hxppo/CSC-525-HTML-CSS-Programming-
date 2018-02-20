@@ -1,0 +1,146 @@
+/*
+   LAB4
+   Filename: lab4.css
+
+   Author: Jinal Vora
+   Date: 10/19/2017
+ */
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+header {
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: lime;
+    height: 120px;
+    top: 0;
+}
+
+
+/** NAVIGATION **/
+
+nav {
+    list-style-type: none;
+    /*remove bullet*/
+    margin: 0;
+    /*remove default browser margin*/
+    padding: 0;
+    /*remove default browser margin*/
+    position: fixed;
+    top: 80px;
+    overflow: hidden;
+    width: 100%;
+    background-color: red;
+}
+
+nav ul {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+/** END OF NAVIGATION PROPERTIES (FIXED)**/
+
+.container {
+
+    position: relative;
+    padding-top: 150px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    height: 100%;
+    z-index: -1;
+    /*controlls stacking order: -1 means place
+ behind any tags*/
+}
+
+
+/*positioning article to the left of aside*/
+
+#left {
+    float: left;
+    width: 80%
+}
+
+
+/*positioning aside to the right*/
+
+#right {
+    float: right;
+    width: 20%;
+}
+
+
+
+footer {
+    background-color: green;
+    height: 30px;
+    bottom: 0;
+    /*stay in the buttom*/
+    width: 100%;
+}
+
+
+span {
+    display: inline-block;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+xmp {
+    white-space: pre-wrap
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    /**border-collapse: collapse;**/
+}
+
+#divcontainer {
+    display: table;
+    text-align: center;
+}
+
+#row1 {
+    display: table-row;
+}
+
+#left1,
+#right1,
+#middle1 {
+    display: table-cell;
+    padding: 10px;
+}

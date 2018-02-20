@@ -1,0 +1,55 @@
+ 
+
+/* create variables */
+var fromValue = document.querySelector(".feedback-from");
+var feedbackValue = document.querySelector(".feedback-content");
+var nameField = document.querySelector("#nameinput");
+var feedbackField = document.querySelector("#other-info");
+var form = document.querySelector(".contact-form");
+var feedbackPreview = document.querySelector(".feedback-preview");
+var submitButton = document.querySelector(".submitbutton");
+
+/* add form text to preview section 
+.textContent returns the textual content of the specified node
+
+*/
+function completePreview() {
+   	
+   /**access the text content and replace with nameField*/
+   fromValue.textContent = nameField.value; 
+   
+   /**access the text content and replace with feedbackField*/
+   feedbackValue.textContent = feedbackField.value; 
+   
+   feedbackPreview.className = "feedback-preview show";
+   
+   /*Returns true if an input element contains valid data*/
+   if (form.checkValidity() === true) {
+	  /*get class property submitbutton and show*/
+      submitButton.className = "submitbutton show";
+   }
+   
+      /*Returns true if an input element contains valid data*/
+   if (form.checkValidity() === false) {
+	  /*get class property*/
+	  /*SYNTAX returns class name property: HTMLElementObject.className */
+	  /*SYNTAX set the class name property:  HTMLElementObject.className = class 
+	     class specifies the class name of an element
+	  */
+	  
+	  /*set class property submittbutton -- set to hide "none" */
+      submitButton.className = "submitbutton";
+	  
+   }
+}
+
+/*
+completePreview();
+*/
+
+/* create event listener for changes to form */
+/*SYNTAX: parameter 1: change - if text is change
+          parameter 2: function
+		  parameter 3: false - make useCapture false
+		  */
+form.addEventListener("change", completePreview, false);

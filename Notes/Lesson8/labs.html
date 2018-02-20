@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Ordered/Unordered List, Tables, Debugging, Responsive Design</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="labs.css">
+   </head>
+   <body>
+      <header>
+         <h2>Ordered/Unordered List, Tables, Debugging, Responsive Design</h2>
+         <nav>
+            <ul>
+               <li><a href="#unordered">Unordered List</a></li>
+               <li><a href="#ordered">Ordered List</a></li>
+               <li><a href="#descriptionlist">Description List</a></li>
+               <li><a href="#navigation">Navigation</a></li>
+               <li><a href="#nestedlist">Nested List</a></li>
+               <li><a href="#tables">Tables</a></li>
+               <li><a href="#tablefr">Table Format (rowspan, colgroup)</a></li>
+               <li><a href="#tablecss">Table Format CSS</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="container">
+      <article id="left">
+         <div id="unordered">
+            <h2>UNORDERED LIST</h2>
+            <span>
+               <h3> Places to travel...</h3>
+               <ul>
+                  <li>France</li>
+                  <li>Britain</li>
+                  <li>Russian</li>
+                  <li>India</li>
+                  <li>Honkong</li>
+               </ul>
+            </span>
+            <span>
+               <xmp>
+                  <ul>
+                     <li>France</li>
+                     <li>Britain</li>
+                     <li>Russian</li>
+                     <li>India</li>
+                     <li>Honkong</li>
+                  </ul>
+               </xmp>
+            </span>
+            <div>
+               <p> "list-style-type" property defines the style of the list item marker. </p>
+               disc - lists item marker to a bullet (default)
+               <br> circle - lists item marker to a circle
+               <br> square - lists item marker to a square
+               <br> none - lists item not to be marked
+               <br>
+            </div>
+            <span>
+               <h3> Places to travel...</h3>
+               <ul style="list-style-type:square">
+                  <li>France</li>
+                  <li>Britain</li>
+                  <li>Russian</li>
+                  <li>India</li>
+                  <li>Honkong</li>
+               </ul>
+            </span>
+            <span>
+               <xmp>
+                  <ul style="list-style-type:square">
+                     <li>France</li>
+                     <li>Britain</li>
+                     <li>Russian</li>
+                     <li>India</li>
+                     <li>Honkong</li>
+                  </ul>
+               </xmp>
+            </span>
+         </div>
+         <hr>
+         <div id="ordered">
+            <h2>ORDERED LIST</h2>
+            <span>
+               <h3> Places to travel...</h3>
+               <ol>
+                  <li>France</li>
+                  <li>Britain</li>
+                  <li>Russian</li>
+                  <li>India</li>
+                  <li>Honkong</li>
+               </ol>
+            </span>
+            <span>
+               <xmp>
+                  <ol>
+                     <li>France</li>
+                     <li>Britain</li>
+                     <li>Russian</li>
+                     <li>India</li>
+                     <li>Honkong</li>
+                  </ol>
+               </xmp>
+            </span>
+            <div>
+               type="1" is numbered by default.
+               <br> type="A" is numbered by upper case
+               <br> type="a" is numbered with lowercase letters
+               <br> type="I" is numbered with uppercase roman numbers
+               <br> type="i" is numbered with lowercase roman numbers
+               <br>
+            </div>
+            <div>
+               <span>
+                  <h3> Places to travel...</h3>
+                  <ol type="a">
+                     <li>France</li>
+                     <li>Britain</li>
+                     <li>Russian</li>
+                     <li>India</li>
+                     <li>Honkong</li>
+                  </ol>
+               </span>
+               <span>
+                  <xmp>
+                     <ol type="a">
+                        <li>France</li>
+                        <li>Britain</li>
+                        <li>Russian</li>
+                        <li>India</li>
+                        <li>Honkong</li>
+                     </ol>
+                  </xmp>
+               </span>
+            </div>
+         </div>
+         <hr>
+         <div id="unordered">
+            <h2>UNORDERED LIST</h2>
+            <span>
+               <h3> Places to travel...</h3>
+               <ul>
+                  <li>France</li>
+                  <li>Britain</li>
+                  <li>Russian</li>
+                  <li>India</li>
+                  <li>Honkong</li>
+               </ul>
+            </span>
+            <span>
+               <xmp>
+                  <ul>
+                     <li>France</li>
+                     <li>Britain</li>
+                     <li>Russian</li>
+                     <li>India</li>
+                     <li>Honkong</li>
+                  </ul>
+               </xmp>
+            </span>
+            <div>
+               <p> "list-style-type" property defines the style of the list item marker. </p>
+               disc - lists item marker to a bullet (default)
+               <br> circle - lists item marker to a circle
+               <br> square - lists item marker to a square
+               <br> none - lists item not to be marked
+               <br>
+            </div>
+            <span>
+               <h3> Places to travel...</h3>
+               <ul style="list-style-type:square">
+                  <li>France</li>
+                  <li>Britain</li>
+                  <li>Russian</li>
+                  <li>India</li>
+                  <li>Honkong</li>
+               </ul>
+            </span>
+            <span>
+               <xmp>
+                  <ul style="list-style-type:square">
+                     <li>France</li>
+                     <li>Britain</li>
+                     <li>Russian</li>
+                     <li>India</li>
+                     <li>Honkong</li>
+                  </ul>
+               </xmp>
+            </span>
+         </div>
+         <hr>
+         <div id="descriptionlist">
+            <h2>DESCRIPTION LIST</h2>
+            <span>
+               <h3> Places to travel...</h3>
+               <dl>
+                  <dt>France</dt>
+                  <dd>- a place where you buy good wine.</dd>
+                  <dt>Britain</dt>
+                  <dd>- a place where they value good tea.</dd>
+               </dl>
+            </span>
+            <span>
+               <xmp>
+                  <dl>
+                     <dt>France</dt>
+                     <dd>- a place where you buy good wine.</dd>
+                     <dt>Britain</dt>
+                     <dd>- a place where they value good tea.</dd>
+                  </dl>
+               </xmp>
+            </span>
+         </div>
+         <hr>
+         <div id="nestedlist">
+            <h2>Nested Lists</h2>
+            <span>
+               <ol>
+                  <li>
+                     Person 1
+                     <ol>
+                        <li>Height: 56 inches</li>
+                        <li>Weight: 200 lbs</li>
+                        <li>Eyes: Blue</li>
+                     </ol>
+                  </li>
+                  <li>
+                     Person 2
+                     <ol>
+                        <li>Height: 60 inches</li>
+                        <li>Weight: 150 lbs</li>
+                        <li>Eyes: Brown</li>
+                     </ol>
+                  </li>
+                  <li>
+                     Person 3
+                     <ol>
+                        <li>Height: 66 inches</li>
+                        <li>Weight: 190 lbs</li>
+                        <li>Eyes: Green</li>
+                     </ol>
+                  </li>
+               </ol>
+            </span>
+            <span>
+            <xmp>
+               <ol>
+                  <li>
+                     Person 1
+                     <ol>
+                        <li>Height: 56 inches</li>
+                        <li>Weight: 200 lbs</li>
+                        <li>Eyes: Blue</li>
+                     </ol>
+                  </li>
+                  <li>
+                     Person 2
+                     <ol>
+                        <li>Height: 60 inches</li>
+                        <li>Weight: 150 lbs</li>
+                        <li>Eyes: Brown</li>
+                     </ol>
+                  </li>
+                  <li>
+                     Person 3
+                     <ol>
+                        <li>Height: 66 inches</li>
+                        <li>Weight: 190 lbs</li>
+                        <li>Eyes: Green</li>
+                     </ol>
+                  </li>
+               </ol>
+            </xmp>
+            <span>
+         </div>
+         <hr>
+         <div id="navigation">
+            <h2>Navigation</h2>
+            <p> Navigation using list: This is like your lab 4.<br>
+            </p>
+            <hr>
+         </div>
+         <div id="tables">
+            <h2>Tables</h2>
+            </p>
+            <span>
+               <table>
+                  <tr>
+                     <th>First</th>
+                     <th>Last</th>
+                     <th>Country of Origin</th>
+                  </tr>
+                  <tr>
+                     <td>Dan</td>
+                     <td>Smith</td>
+                     <td>Britain</td>
+                  </tr>
+                  <tr>
+                     <td>Greg</td>
+                     <td>Rack</td>
+                     <td>France</td>
+                  </tr>
+                  <tr>
+                     <td>Jackie</td>
+                     <td>Chan</td>
+                     <td>China</td>
+                  </tr>
+               </table>
+            </span>
+            <span>
+               <xmp>
+                  <table>
+                     <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Country of Origin</th>
+                     </tr>
+                     <tr>
+                        <td>Dan</td>
+                        <td>Smith</td>
+                        <td>Britain</td>
+                     </tr>
+                     <tr>
+                        <td>Greg</td>
+                        <td>Rack</td>
+                        <td>France</td>
+                     </tr>
+                     <tr>
+                        <td>Jackie</td>
+                        <td>Chan</td>
+                        <td>China</td>
+                     </tr>
+                  </table>
+               </xmp>
+            </span>
+            <span>
+            <xmp>
+               table, th, td {
+               border: 1px solid black;
+               border-collapse: collapse;
+               }
+            </xmp>
+            <span>
+            <hr>
+         </div>
+         <div id="tablefr">
+            <h2>Table Format (rowspan attribute)</h2>
+            <span>
+               <table>
+                  <colgroup>
+                     <col span="2" style="background-color:green">
+                     <col style="background-color:yellow">
+                  </colgroup>
+                  <tr>
+                     <th>Week 1</th>
+                     <th>Cost</th>
+                     <th>Savings for holiday!</th>
+                  </tr>
+                  <tr>
+                     <td>Week 2</td>
+                     <td>$1200</td>
+                     <td rowspan="3">$2600</td>
+                  </tr>
+                  <tr>
+                     <td>Week 3</td>
+                     <td>$500</td>
+                  </tr>
+                  <tr>
+                     <td>Week 3</td>
+                     <td>$900</td>
+                  </tr>
+               </table>
+            </span>
+            <span>
+               <xmp>
+                  <table>
+                     <tr>
+                        <th>Week 1</th>
+                        <th>Cost</th>
+                        <th>Savings for holiday!</th>
+                     </tr>
+                     <tr>
+                        <td>Week 2</td>
+                        <td>$1200</td>
+                        <td rowspan="3">$2600</td>
+                     </tr>
+                     <tr>
+                        <td>Week 3</td>
+                        <td>$500</td>
+                     </tr>
+                     <tr>
+                        <td>Week 3</td>
+                        <td>$900</td>
+                     </tr>
+                  </table>
+               </xmp>
+            </span>
+            <hr>
+         </div>
+         <div id="tablecss">
+         <h2>Table Like Structure (CSS)</h2>
+         <span>
+            <div id="divcontainer">
+               <div id="row1">
+                  <div id="left1">
+                     <h4>First</h4>
+                     <p>John</p>
+                     <p>John</p>
+                  </div>
+                  <div id="middle1">
+                     <h4>Last</h4>
+                     <p>Craig</p>
+                     <p>Edleman</p>
+                  </div>
+                  <div id="right1">
+                     <h4>Salary</h4>
+                     <p>1 million/year</p>
+                     <p>1.2 million/year</p>
+                  </div>
+               </div>
+            </div>
+         </span>
+         <span>
+            <xmp>
+               <div id="divcontainer">
+                  <div id="row1">
+                     <div id="left1">
+                        <h4>First</h4>
+                        <p>John</p>
+                        <p>John</p>
+                     </div>
+                     <div id="middle1">
+                        <h4>Last</h4>
+                        <p>Craig</p>
+                        <p>Edleman</p>
+                     </div>
+                     <div id="right1">
+                        <h4>Salary</h4>
+                        <p>1 million/year</p>
+                        <p>1.2 million/year</p>
+                     </div>
+                  </div>
+               </div>
+               <div>
+            </xmp>
+         </span>
+         <span>
+            <xmp>
+               #divcontainer {
+               display: table;
+               text-align: center;
+               }
+               #row1  {
+               display: table-row;
+               }
+               #left1, #right1, #middle1 {
+               display: table-cell;
+               padding: 10px;
+               }
+            </xmp>
+         </span>
+         <div>
+      </article>
+      <aside id="right">
+      <a href="www.itu.edu">ITU link</a>
+      <br>
+      <a href="www.yahoo.com">Yahoo!</a>
+      <hr>
+      </aside>
+      </div>
+      <!-- containter -->
+      <footer>
+         <p>Copyright &copy; www.itu.edu</p>
+      </footer>
+   </body>
+   </body>
+</html>

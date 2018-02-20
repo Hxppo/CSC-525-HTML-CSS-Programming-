@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="opencustomize()">Check Window Size</button>
+ <p id="showsize"></p>
+<script>
+ 
+   function opencustomize() {
+    w = window.innerWidth/3;
+    h = window.innerHeight/2;
+ 
+	document.getElementById("showsize").innerHTML = "Width: " + w + "<br>Height: " + h;
+    open('contact.html', 'Hello Window',"width="+w+",height="+h);
+			 
+	}
+	
+</script>
+
+
+</body>
+</html>

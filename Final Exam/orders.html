@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Revisions Bookstore & Café</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="page-head">
+        <a href="./home.html">
+            <img class="logo1" src="./final_logo_v2.gif" alt="Cafe Shop Logo" title="" />
+        </a>
+        <h1>Revisions Bookstore & Café</h1>
+        <nav>
+            <a href="./orders.html">
+                <b>Special Orders</b>
+            </a>
+            <a href="./home.html">
+                <b>Home</b>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Special Orders</h2>
+            <form>
+                <fieldset id="personal-info">
+                    <label class="required">
+                        <p>Name</p>
+                        <div class="required">
+                            <input type="text" name="ful-name" placeholder="Full Name" required>
+                        </div>
+                    </label>
+
+                    <label for="email" class="required">
+                        <p>Email</p>
+                        <input type="email" id="email" name="email" required>
+                    </label>
+
+                    <label for="phone" class="required">
+                        <p>Phone</p>
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <div class="required">
+                        <p>Title, Author, ISBN, or any information you have on the book or books you want</p>
+                    </div>
+                    <label>
+                        <textarea rows="5" cols="50" required></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset class="submitbutton">
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="navigation">
+            <article>
+                <p>Custom brewed coffee and hand-selected books</p>
+                <p>Special orders are our speciality</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>412 N. 25th St.</p>
+        <p>Richmond, VA 23223</p>
+        <p>(840) 555-2565</p>
+    </footer>
+
+</body>
+
+
+</html>
